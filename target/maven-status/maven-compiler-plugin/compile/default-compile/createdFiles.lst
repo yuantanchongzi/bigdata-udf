@@ -1,0 +1,8 @@
+cn/wd/udaf/HiveData2ArrayString.class
+cn/wd/udf/GetDataFromJson.class
+cn/wd/udf/HiveData2JsonString.class
+cn/wd/udf/Base64Decode.class
+cn/wd/udf/Timestamp2String.class
+cn/wd/udaf/HiveData2ArrayString$GenericUdafMeberLevelEvaluator.class
+cn/wd/udaf/HiveData2ArrayString$GenericUdafMeberLevelEvaluator$SumAgg.class
+cn/wd/udtf/JsonArray2HiveData.class

@@ -1,0 +1,6 @@
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udtf/JsonArray2HiveData.java
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udf/GetDataFromJson.java
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udaf/HiveData2ArrayString.java
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udf/Base64Decode.java
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udf/HiveData2JsonString.java
+/Users/fangzhong/Desktop/wdudf/src/main/java/cn/wd/udf/Timestamp2String.java

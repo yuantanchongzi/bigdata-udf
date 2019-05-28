@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+<!--<appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--<File>${LOG_PATH}/info.log</File>-->
+<!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--<fileNamePattern>${LOG_PATH}/info-%d{yyyyMMdd}.log.%i</fileNamePattern>-->
+<!--<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--<maxFileSize>500MB</maxFileSize>-->
+<!--</timeBasedFileNamingAndTriggeringPolicy>-->
+<!--<maxHistory>1</maxHistory>-->
+<!--</rollingPolicy>-->
+<!--<layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}    %msg    %n-->
+<!--</Pattern>-->
+<!--</layout>-->
+<!--</appender>-->
+
+<appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>log/info.log</File>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>log/info-%d{yyyyMMdd}.log.%i</fileNamePattern>
+        <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+            <maxFileSize>500MB</maxFileSize>
+        </timeBasedFileNamingAndTriggeringPolicy>
+        <maxHistory>1</maxHistory>
+    </rollingPolicy>
+    <!--<layout class="ch.qos.logback.classic.PatternLayout">-->
+    <!--<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}    %msg    %n-->
+    <!--</Pattern>-->
+    <!--</layout>-->
+    <encoder>
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}    %msg    %n</Pattern>
+    </encoder>
+</appender>
+
+<logger name="com.example.demo.controller.UserController" level="ERROR" additivity="true">
+    <appender-ref ref="INFO_FILE"/>
+</logger>
+
+<!--<root level="ERROR">-->
+<!--<appender-ref ref="INFO_FILE" />-->
+<!--</root>-->
+</configuration>
+
+
+
+
+
