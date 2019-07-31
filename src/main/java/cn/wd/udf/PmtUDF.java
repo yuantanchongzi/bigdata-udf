@@ -22,7 +22,7 @@ public class PmtUDF extends UDF {
         String[] cs = code.split(",");
 
         double monthRate = Double.parseDouble(cs[0]);
-        int periods = Integer.parseInt(cd[1]);
+        int periods = Integer.parseInt(cs[1]);
         double amount = Double.parseDouble(cs[2]);
         int percise = Integer.parseInt(cs[3]);
 
